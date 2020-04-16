@@ -4,6 +4,7 @@ const app = express();
 const dateTime = require("simple-datetime-formater");
 const bodyParser = require("body-parser");
 const chatRouter = require("./route/chatroute");
+const indexRouter = require("./route/indexroute");
 
 //require the http module
 const http = require("http").Server(app);
@@ -18,6 +19,7 @@ app.use(bodyParser.json());
 
 //routes
 app.use("/chats", chatRouter);
+app.use("/", indexRouter);
 
 //set the express.static middleware
 app.use(express.static(__dirname + "/public"));

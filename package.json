@@ -1,5 +1,5 @@
 {
-  "name": "chat_Base",
+  "name": "chat_base",
   "version": "1.0.2",
   "description": "",
   "main": "app.js",
@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^4.0.1",
     "bcryptjs": "^2.4.3",
     "bluebird": "^3.5.3",
     "body-parser": "^1.18.3",
@@ -21,6 +22,15 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "simple-datetime-formater": "^1.0.8",
-    "socket.io": "^2.2.0"
-  }
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasetyanurangga/chat_base.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prasetyanurangga/chat_base/issues"
+  },
+  "homepage": "https://github.com/prasetyanurangga/chat_base#readme"
 }

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Anonymouse Real-time chat</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<!------ Include the above in your HEAD tag ---------->
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="chat_window">
+    <div class="top_menu">
+        <div class="buttons">
+            <div class="button close"></div>
+            <div class="button minimize"></div>
+            <div class="button maximize"></div>
+        </div>
+        <div class="title">Chat</div>
+    </div>
+    <ul id ="messages" class="messages">
+        
+    </ul>
+     
+    <div class="bottom_wrapper clearfix">
+   <i id="typing"></i>
+    <form id="form">
+        <div class="message_input_wrapper">
+            <input id="message" class="message_input" placeholder="Type your message here..." />
+        </div>
+        <button class="send_message">
+           Send
+        </button>
+        <button class="send_message">
+           Send
+        </button>
+      </form>
+    </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <script src="js/chat.js"></script>
+
+  </body>
+</html>
+
+
+
+

@@ -491,7 +491,8 @@ app.post("/register", function(req, res){
     });
     console.log(req.body);
     user.save((err, response) => {
-      if(err) res.status(400).send(err);
-      res.status(200).send(response);
+      if(!response) res.status(400).json({success : false, data : []});
+
+      res.status(200).json({success : true, data : response});
     })
 });

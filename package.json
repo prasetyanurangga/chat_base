@@ -8,7 +8,7 @@
     "start": "node app",
     "start_test": "npm run app.js"
   },
-  "author": "",
+  "author": "Angga Nur Prasetya",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^4.0.1",
